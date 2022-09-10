@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints 3 combination of numbers
  *
- * Return - Always 0 (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
