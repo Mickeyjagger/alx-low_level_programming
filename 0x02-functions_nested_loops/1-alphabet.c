@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
- * main - print alphabet in lowercase
+ * print_alphabet - function to print abc
  *
  * Return: Always 0
  */
-
-int main(void)
+void print_alphabet(void)
 {
 	char r;
 
@@ -14,5 +12,5 @@ int main(void)
 	{
 		_putchar(r);
 	}
-	_putchar('\n');
+_putchar('\n');
 }
