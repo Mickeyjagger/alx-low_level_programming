@@ -5,19 +5,25 @@
  * @size: an input integer
  * Return: Always 0
  */
-void print_square(int size)
+int print_square(int size)
 {
-	int i, j;
+	int num;
 
-	if (size > 0)
+	for (num = 1; num <= 100; num++)
 	{
-		for (i = 0; i < size; i++)
-		{
-			for (j = 0; j < size; j++)
-				_putchar('#');
-			_putchar('\n');
-		}
+		if (num % 3 == 0 && !(num % 5 == 0))
+			printf("Fizz");
+		else if (num % 5 == 0 && !(num % 3 == 0))
+			printf("Buzz");
+		else if (num % 3 == 0 && num % 5 == 0)
+			printf("FizzBuzz");
+		else
+			printf("%d", num);
+		if (num != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	else
-		_putchar('\n');
+
+	return (0);
 }
